@@ -1,3 +1,24 @@
 // Place all the styles related to the Shows controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.show_index {
+
+	width: 100%;
+	color: red;
+	max-height: 500px;
+}
+.show {
+
+text-align: left;
+	
+}
+.show_index_loop {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+img {
+height: 90px;
+width: 140px;
+}
