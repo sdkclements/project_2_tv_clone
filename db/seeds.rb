@@ -10,3 +10,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+shows = Show.create([{name: 'Firefly', rating: 10, img_url:'http://i.imgur.com/uBKklAc.png', info: 'Best show ever created'},{name: 'Fringe', rating: 8, img_url:'http://i.imgur.com/cdAcj8W.jpg', info: 'Scifi Madness'}])

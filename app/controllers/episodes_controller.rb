@@ -13,7 +13,7 @@ class EpisodesController < ApplicationController
     @episode = Episode.create!(params[:episode])
   end
 
-  def episode
+  def show
   	@episode = Episode.find(params[:id])
   end
   def edit
@@ -29,6 +29,6 @@ class EpisodesController < ApplicationController
   def destroy
   @episode = Episode.find(params[:id])
   @episode.destroy
-  redirect_to :root
+  redirect_to season_path(@episode.season_id)
   end
 end

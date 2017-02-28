@@ -11,11 +11,13 @@ class SeasonsController < ApplicationController
 
   def create
     @season = Season.create!(params[:season])
+    redirect_to show_season_path(@season)
   end
 
-  def season
+  def show
   	@season = Season.find(params[:id])
   end
+
   def edit
   @season = Season.find(params[:id])
   end
@@ -23,12 +25,12 @@ class SeasonsController < ApplicationController
 
   def update
     @season = Season.update(params[:id])
-    redirect_to season_path
+    redirect_to show_season_path(@season)
   end
 
   def destroy
   @season = Season.find(params[:id])
   @season.destroy
-  redirect_to season_path
+  redirect_to show_seasons_path
   end
 end

@@ -1,12 +1,12 @@
 <h1>Seasons#index</h1>
 
-<h1>All Seasons: </h1>
+<h1> Seasons: </h1>
 <% @seasons.each do |season| %>
   <div class="season">
-    <h2><%= link_to season.name, season_path(season) %></h2>
+    <h2><%= link_to season.name, show_seasons_path(season) %></h2>
    
   </div>
 <% end %>
 
-<h2><%= link_to "New Season", new_season_path %> </h2>
+<h2><%= link_to "New Season", new_show_season_path %> </h2>
 <p>Find me in app/views/seasons/index.html.erb</p>
