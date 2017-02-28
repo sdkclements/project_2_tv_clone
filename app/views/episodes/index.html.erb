@@ -1,13 +1,13 @@
 <h1>Episodes#index</h1>
 
-<h1>All Seasons: </h1>
+<h1>All Episodes: </h1>
 <% @episodes.each do |episode| %>
   <div class="episode">
-    <h2><%= link_to episode.name, episode_path(episode) %></h2>
+    <h2><%= link_to episode.name, show_season_episode_path(episode, episode.season, @season.show) %></h2>
    
   </div>
 <% end %>
 
-<h2><%= link_to "New Episode", new_episode_path %> </h2>
+<h2><%= link_to "New Episode", new_show_season_episode_path %> </h2>
 
 <p>Find me in app/views/episodes/index.html.erb</p>

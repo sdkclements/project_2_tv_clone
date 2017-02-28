@@ -1,9 +1,9 @@
 <h1>Seasons#index</h1>
 
-<h1> Seasons: </h1>
+<h1> Seasons of :  </h1>
 <% @seasons.each do |season| %>
   <div class="season">
-    <h2><%= link_to season.name, show_seasons_path(season) %></h2>
+    <h2><%= link_to season.name, show_season_episodes_path(season, season.show) %></h2>
    
   </div>
 <% end %>

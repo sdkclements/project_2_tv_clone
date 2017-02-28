@@ -1,22 +1,26 @@
 class SeasonsController < ApplicationController
-  
 
    def index
-  	@seasons = Season.all
+    @show = Show.find(params[:show_id])
+  	@seasons = @show.seasons.all
   end
 
   def new
   	@season = Season.new
-  end
-
-  def create
-    @season = Season.create!(params[:season])
-    redirect_to show_season_path(@season)
+    @show = Show.find(params[:show_id])
   end
 
   def show
-  	@season = Season.find(params[:id])
+    @season = Season.find(params[:id])
   end
+
+  def create
+    @show = Show.find(params[:show_id])
+    @season = @show.seasons.create!(season_params)
+    redirect_to show_seasons_path(@show)
+  end
+
+  
 
   def edit
   @season = Season.find(params[:id])
@@ -33,4 +37,10 @@ class SeasonsController < ApplicationController
   @season.destroy
   redirect_to show_seasons_path
   end
+
+  private
+  def season_params
+    params.require(:season).permit(:name, :numb)
+  end
+
 end
