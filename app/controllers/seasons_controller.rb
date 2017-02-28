@@ -29,6 +29,6 @@ class SeasonsController < ApplicationController
   def destroy
   @season = Season.find(params[:id])
   @season.destroy
-  redirect_to :root
+  redirect_to season_path
   end
 end
