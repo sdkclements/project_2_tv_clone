@@ -22,13 +22,13 @@ class ShowsController < ApplicationController
 
   def update
     @show = Show.update(params[:id])
-    redirect_to show_path
+    redirect_to shows_path
   end
 
   def destroy
   @show = Show.find(params[:id])
   @show.destroy
-  redirect_to :root
+  redirect_to shows_path
   end
 
   

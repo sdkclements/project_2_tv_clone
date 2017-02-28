@@ -1,2 +1,13 @@
 <h1>Seasons#show</h1>
+
+<hr>
+<h2> <%= @season.name %></h2>
+<p class="season">
+Season Number: <%= @seasons.numb %> <br />
+
+
+</p>
+
+<h3><%= link_to "Episodes", episodes_path(@season.id)  %> </h3>
+
 <p>Find me in app/views/seasons/show.html.erb</p>

@@ -1,2 +1,13 @@
 <h1>Shows#show</h1>
+<hr>
+<h2> <%= @show.name %></h2>
+<p class="show">
+Rating : <%= @show.rating %> <br />
+Info : <%= @show.info %>
+
+</p>
+<img src="<%=@show.img_url%>" id="show_img"> <br />
+
+<h3><%= link_to "Seasons", season_path(@show.id)  %> </h3>
+
 <p>Find me in app/views/shows/show.html.erb</p>

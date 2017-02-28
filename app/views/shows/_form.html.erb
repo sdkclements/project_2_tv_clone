@@ -1,0 +1,13 @@
+<%= form_for @show do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+  <%= f.label :rating %>:
+  <%= f.text_field :rating%><br />
+  <%= f.label :img_url %>:
+  <%= f.text_field :img_url%><br />
+
+  <%= f.label :info %>:
+  <%= f.text_field :info%><br />
+
+  <%= f.submit %>
+<% end %>

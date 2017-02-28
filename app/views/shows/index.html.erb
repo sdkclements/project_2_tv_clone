@@ -1,2 +1,12 @@
 <h1>Shows#index</h1>
+<h1>All Shows: </h1>
+<% @shows.each do |show| %>
+  <div class="show">
+    <h2><%= link_to show.name, show_path(show) %></h2>
+    <img src="<%= show.img_url %>"/>
+  </div>
+<% end %>
+
+<h2><%= link_to "New Show", new_show_path %> </h2>
+
 <p>Find me in app/views/shows/index.html.erb</p>

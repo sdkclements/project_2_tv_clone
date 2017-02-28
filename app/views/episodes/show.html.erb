@@ -1,2 +1,13 @@
 <h1>Episodes#show</h1>
+
+<hr>
+<h2> <%= @episode.name %></h2>
+<p class="episode">
+Episode Number: <%= @episode.epnumb %> <br />
+Video Link: <%= @episode.link_url %>
+
+
+</p>
+
+<h3><%= link_to "Episodes", episodes_path(@season.id)  %> </h3>
 <p>Find me in app/views/episodes/show.html.erb</p>
