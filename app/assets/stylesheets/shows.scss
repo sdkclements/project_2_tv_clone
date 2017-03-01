@@ -4,9 +4,10 @@
 
 .show_index {
 
-	width: 100%;
+	max-width: 100%;
 	color: red;
-	max-height: 500px;
+	max-height: 700px;
+	min-height: 300px
 }
 .show {
 
@@ -19,6 +20,10 @@ text-align: left;
 }
 
 img {
-height: 90px;
-width: 140px;
+border-style: solid;
+border-color: black;
+border-radius: 3px;
+max-width: 140px;
+max-height: 90px;
+
 }

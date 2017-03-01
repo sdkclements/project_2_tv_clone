@@ -3,7 +3,7 @@
 <h1>All Episodes: </h1>
 <% @episodes.each do |episode| %>
   <div class="episode">
-    <h2><%= link_to episode.name, show_season_episode_path(episode, episode.season, @season.show) %></h2>
+    <h2><%= link_to episode.name, show_season_episode_path(episode, episode.season, episode.season.show) %></h2>
    
   </div>
 <% end %>

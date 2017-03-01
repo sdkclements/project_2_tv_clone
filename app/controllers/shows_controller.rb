@@ -8,12 +8,12 @@ class ShowsController < ApplicationController
     @show = Show.new
   end
   def show
-    @show = Show.find(params[:id])
+    @show = Show.find(show_params)
   end
 
   def create
     @show = Show.create!(show_params)
-    redirect_to show_path(@show)
+    redirect_to shows_path(@show)
   end
 
   
@@ -24,14 +24,15 @@ class ShowsController < ApplicationController
 
 
   def update
-    @show = Show.update(params[:id])
+    @show = Show.find(params[:id])
+    @show.update(show_params)
     redirect_to shows_path
   end
 
   def destroy
     @show = Show.find(params[:id])
     @show.destroy
-    redirect_to shows_path
+    redirect_to :root
   end
 
   private

@@ -4,7 +4,26 @@
 
 # drop_table(:users, if_exists: true) in 
 # a migration ensures that the migration will run without exceptions, whether or not the “users” table exists.
+Show.destroy_all
+Season.destroy_all
+Episode.destroy_all
 
+
+# nat = User.create(email: 'nat@email.com', password: '444444', first_name: 'Nat')
+#   coding = nat.lists.create(name: 'Coding Projects')
+#     coding.todos.create(name: 'Game of Thrones lab')
+#     coding.todos.create(name: 'todo list app')
+#   outcomes = nat.lists.create(name: 'Outcomes Prep')
+#     outcomes.todos.create(name: 'LinkedIn profile')
+#     outcomes.todos.create(name: 'Résumé')
+
+# tim = User.create(email: 'tim@email.com', password: '444444', first_name: 'Tim')
+#   chores = tim.lists.create(name: 'Household Chores')
+#     chores.todos.create(name: 'dishes')
+#     chores.todos.create(name: 'laundry')
+#   shopping = tim.lists.create(name: 'Shopping')
+#     shopping.todos.create(name: 'dish soap')
+#     shopping.todos.create(name: 'laundry detergent')
 
 # Examples:
 #

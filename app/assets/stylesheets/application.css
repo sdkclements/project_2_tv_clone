@@ -58,6 +58,13 @@ canvas{ display: block; vertical-align: bottom; }
 	text-align: center;
 
 }
+.aboveYield {
+	text-align: center;
+
+}
+.belowParticle{
+	text-align: center;
+}
 img {
 height: 90px;
 width: 90px;

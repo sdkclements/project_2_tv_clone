@@ -3,7 +3,7 @@
 <h1> Seasons of :  </h1>
 <% @seasons.each do |season| %>
   <div class="season">
-    <h2><%= link_to season.name, show_season_episodes_path(season, season.show) %></h2>
+    <h2><%= link_to season.name, show_season_episodes_path(season, season.show) %></h2> <%= link_to "(-)DELETE SEASON(-)", show_season_path(season, season.show), method: :delete %>
    
   </div>
 <% end %>
