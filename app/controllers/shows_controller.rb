@@ -30,7 +30,7 @@ class ShowsController < ApplicationController
   end
 
   def destroy
-    @show = Show.find(params[:id])
+    @show = Show.find(params[:show_id]) 
     @show.destroy
     redirect_to :root
   end
