@@ -1,6 +1,7 @@
 <div class="show_index">
-<h1>Shows#index</h1>
-<h1>All Shows: </h1>
+<h1>Recent Shows</h1>
+<h2><%= link_to "(+) -Add a Show- (+)", new_show_path %> </h2>
+<h1>All: </h1>
 <hr>
 <div class="show_index_loop">
 <% @shows.each do |show| %>
@@ -11,7 +12,7 @@
 <% end %>
 </div>
 
-<h2><%= link_to "(+) -New Show- (+)", new_show_path %> </h2>
+
 
 <p>Find me in app/views/shows/index.html.erb</p>
 </div>

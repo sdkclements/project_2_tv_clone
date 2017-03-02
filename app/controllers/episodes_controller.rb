@@ -42,6 +42,8 @@ class EpisodesController < ApplicationController
   redirect_to season_path(@episode.season_id)
   end
 
+  private
+
   def episode_params
     params.require(:episode).permit(:name, :epnumb, :link_url)
   end

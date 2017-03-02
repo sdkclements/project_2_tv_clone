@@ -13,7 +13,7 @@
 *= require_tree .
 *= require_self
 */
-body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; background-color: grey;
+body{ margin-left: 15%; margin-right: 15%; font:normal 75% Arial, Helvetica, sans-serif; background-color: grey;
 color: white;color: white; } 
 nav{
 	text-align: center;
@@ -50,11 +50,12 @@ canvas{ display: block; vertical-align: bottom; }
 
 }
 .yeilder {
+	height: 700px;
 	border-style: solid;
 	border-color: white;
 	border-radius: 6px;
 	background-color: #1975C8;
-	width: 65%;
+	width: auto;
 	text-align: center;
 
 }
