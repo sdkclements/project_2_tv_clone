@@ -29,10 +29,10 @@ Episode.destroy_all
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-firefly = Show.create(name: 'Firefly', rating: 10, img_url:'http://i.imgur.com/uBKklAc.png', info: 'Best show ever created')
+firefly = Show.create(name: 'Firefly', rating: 10, img_url:'http://i.imgur.com/d7ozhrH.jpg', info: 'Best show ever created')
 	ffsplit= firefly.seasons.create(name:'ffseason1', numb: 1)
 		ffsplit.episodes.create(name: 'ffep1', epnumb: 1, link_url:"https://www.youtube.com/embed/9BTvqo3jzoc")
-		ffsplit.episodes.create(name: 'ffep2', epnumb: 2, link_url:'https://www.youtube.com/watch?v=7DiWxcilWtU')
-		ffsplit.episodes.create(name: 'ffep3', epnumb: 3, link_url: 'https://www.youtube.com/watch?v=nMEHJPuggHQ')
+		ffsplit.episodes.create(name: 'ffep2', epnumb: 2, link_url:'https://www.youtube.com/embed/7DiWxcilWtU')
+		ffsplit.episodes.create(name: 'ffep3', epnumb: 3, link_url: 'https://www.youtube.com/embed/nMEHJPuggHQ')
 
-fringe = Show.create(name: 'Fringe', rating: 8, img_url:'http://i.imgur.com/cdAcj8W.jpg', info: 'Scifi Madness')
+fringe = Show.create(name: 'Fringe', rating: 8, img_url:'http://i.imgur.com/ECjnv6k.jpg', info: 'Scifi Madness')

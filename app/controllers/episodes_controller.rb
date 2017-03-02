@@ -16,7 +16,9 @@ class EpisodesController < ApplicationController
  
 
   def show
-  	@episode = Episode.find(params[:id])
+  	@show = Show.find(params[:show_id])
+    @season = Season.find(params[:season_id])
+    @episode = @season.episodes.find(params[:id])
   end
 
    def create
