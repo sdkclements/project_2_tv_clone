@@ -1,3 +1,7 @@
-<h1>Seasons#edit</h1>
+<h1>EDIT and DELETE SEASON</h1>
 <%= render "form" %>
+
+
+<%= form_for [@show, @season] method: :delete do |f|%>
+<%= f.submit "Delete Season" %>
 <p>Find me in app/views/seasons/edit.html.erb</p>

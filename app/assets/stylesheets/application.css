@@ -17,6 +17,8 @@ body{ margin-left: 15%; margin-right: 15%; font:normal 75% Arial, Helvetica, san
 color: white; } 
 nav{
 	text-align: center;
+	font-size: 200%;
+	color: white;
 }
 header{
 	text-align: center;
@@ -46,11 +48,12 @@ canvas{ display: block; vertical-align: bottom; }
 	border-style: solid;
 	border-color: white;
 	border-radius: 6px;
-	width: 25%;
+	width: 80%;
+	margin: auto;
 
 }
 .yeilder {
-	height: 700px;
+	height: 500px;
 	border-style: solid;
 	border-color: white;
 	border-radius: 6px;

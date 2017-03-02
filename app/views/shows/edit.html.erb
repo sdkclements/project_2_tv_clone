@@ -1,7 +1,7 @@
-<h1>Shows#edit</h1>
+<h1>EDIT and DELETE SHOW</h1>
 <%= render "form" %>
 
-<%= form_for @show, method: :delete do |f| %>
+<%= form_for [@show], method: :delete do |f| %>
   <%= f.submit "Delete!" %>
 <% end %>
 <p>Find me in app/views/shows/edit.html.erb</p>
