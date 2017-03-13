@@ -1,6 +1,6 @@
 # Project 2 Evaluation
 
-[inline code comments]()
+[inline code comments](https://github.com/sdkclements/project_2_tv_clone/pull/1/files)
 
 ## Technical Requirements
 
