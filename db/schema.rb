@@ -17,6 +17,10 @@ ActiveRecord::Schema.define(version: 20170227190914) do
 
   create_table "episodes", force: :cascade do |t|
     t.string   "name"
+    # AM: Small thing but for code readability I would be as consistent as possible with your column names.
+    # AM: For episodes, you have an "epnumb" column. For seasons, however, you have a column called just "number".
+    # AM: I would pick one style and stick to it, doesn't matter which.
+    # AM: These are the small things that potential employers are going to like. Putting thought into naming conventions shows.
     t.integer  "epnumb"
     t.string   "link_url"
     t.integer  "season_id"

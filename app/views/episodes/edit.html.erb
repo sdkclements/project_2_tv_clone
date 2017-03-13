@@ -1,6 +1,7 @@
 <h1>EDIT AND DELETE EPISODES</h1>
 <%= render "form" %>
 
+<!-- AM: Missing a comma between `form_for[ ... ]` and `method:` -->
 <%= form_for [@show, @season, @episode] method: :delete do |f|%>
 <%= f.submit "Delete Episode" %>
 <% end %>

@@ -16,7 +16,7 @@ class ShowsController < ApplicationController
     redirect_to shows_path(@show)
   end
 
-  
+  # AM: Another small thing but be consistent with spacing and indentation. Code readability is super important.
 
   def edit
     @show = Show.find(params[:id])
@@ -30,7 +30,7 @@ class ShowsController < ApplicationController
   end
 
   def destroy
-    @show = Show.find(params[:id]) 
+    @show = Show.find(params[:id])
     @show.destroy
     redirect_to :root
   end

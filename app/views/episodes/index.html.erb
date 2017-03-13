@@ -4,10 +4,11 @@
 <% @episodes.each do |episode| %>
   <div class="episode">
     <h2><%= link_to episode.name, show_season_episode_path(episode.season.show, episode.season, episode.id ) %></h2>
-   
+
   </div>
 <% end %>
 
 <h2><%= link_to "New Episode", new_show_season_episode_path %> </h2>
 
+<!-- AM: Remove generated code like this from your app. -->
 <p>Find me in app/views/episodes/index.html.erb</p>
