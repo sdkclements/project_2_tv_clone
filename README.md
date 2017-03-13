@@ -1,3 +1,5 @@
+<!-- AM: Highly recommend looking into Markdown formatting. It's widely used and makes readmes look very nice. -->
+
 # README
 
 This README would normally document whatever steps are necessary to get the

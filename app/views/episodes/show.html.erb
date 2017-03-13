@@ -1,3 +1,4 @@
+<!-- AM: Get rid of generated code like this next line. -->
 <h1>Episodes#show</h1>
 
 <hr>
@@ -6,11 +7,12 @@
 Episode Number: <%= @episode.epnumb %> <br />
 Video Link: <a href=<%= @episode.link_url %>><%= @episode.link_url %></a>
 <hr>
-Episode video: 
+Episode video:
+<!-- AM: The video could use some additional layout CSS. Right now it expands beyond its container.-->
 <iframe  width="600" height="400" frameborder="0"
  src='<%=@episode.link_url%>'
  allowfullscreen>
-	
+
 </iframe>
 
 </p>
